@@ -6,6 +6,7 @@
 // parse through list into array
 	// array words(filename.txt, FILE_IGNORE_NEW_LINES, FINE_SKIP_EMPTY_LINES)
 	$words = file(words.txt, FILE_IGNORE_NEW_LINES| FINE_SKIP_EMPTY_LINES);
+	echo "i'm here";
 	foreach($words as $word){
 		echo $word;
 	}
