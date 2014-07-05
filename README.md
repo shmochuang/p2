@@ -3,10 +3,10 @@
 http://www.shmochuang.com/p2
 
 #Description
-A basic page that answers questions about myself in relation to the course.
+An app that generates a password to the specifications of the user using the options given on the form.
 
 #Details for teaching team
-I used the blueprint css framework.
+I used the word list that was suggested by Maxim on piazza.
 
 #Outside code
--Blueprint: http://blueprintcss.org/
+http://www.mieliestronk.com/corncob_lowercase.txt
