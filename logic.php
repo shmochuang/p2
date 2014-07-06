@@ -34,10 +34,10 @@
 		echo $password[$i]."<br>";
 		
 		// if numeral on --> concat num
-		//if ($numeral == 'on') {
-		//	$num = rand(0, 99);
-		//	$password[$i] = $password[$i].""
-		//}
+		if ($numeral == 'on') {
+			$num = rand(0, 99);
+			$password[$i] = $password[$i].""
+		}
 		// if symbol on --> concat symbol
 		// if seperator = camel --> ucfirst
 		// if seperator = hyphen --> concat hypen
