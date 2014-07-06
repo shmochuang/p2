@@ -14,7 +14,7 @@
 		// echo $numeral;  on/off
 		// echo $symbol;  on/off
 		// echo $seperator;  camel/hyphens
-		// echo $case;  capital/lower
+		 echo $case;  capital/lower
 	
 	
 	// if $num_words not greater than 0 and less than 10, echo "please put number btwn 1-10"
@@ -50,6 +50,16 @@
 			$password[$i] .= $char;
 		}
 		
+		// switch to hyphens if case is chosen
+		// if case = capital --> strtoupper
+		if ($case == 'capital') {
+			$password[$i] = strtoupper($password[$i]);
+		}
+		// if case = lower --> strtolower
+		else if ($case == 'lower') {
+			$password[$i] = strtolower($password[$i]);
+		}
+		
 		
 		// if seperator = camel --> ucfirst
 		if ($seperator == 'camel'){
@@ -60,14 +70,7 @@
 			$password[$i] = $password[$i]."-";
 		}
 		
-		
-		// if case = capital --> strtoupper
-		if ($case == 'capital') {
-			$password[$i] = strtoupper($password[$i]);
-		}
-		else if ($case == 'lower') {
-			$password[$i] = strtolower($password[$i]);
-		}
+
 		
 		echo $password[$i];
 	}
