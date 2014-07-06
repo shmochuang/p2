@@ -49,7 +49,13 @@
 			
 			$password[$i] .= $char;
 		}
+		
+		
 		// if seperator = camel --> ucfirst
+		if ($seperator == 'camel'){
+			$password[$i] = ucfirst($password[$i]);
+		}
+		
 		// if seperator = hyphen --> concat hypen
 		// if case = upper --> strtoupper
 		
