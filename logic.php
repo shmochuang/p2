@@ -51,7 +51,7 @@
 		// if seperator = hyphen --> concat hypen
 		// if case = upper --> strtoupper
 		
-		echo $password[$i]."<br>";
+		//echo $password[$i]."<br>";
 	}
 
 	
