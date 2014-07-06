@@ -50,10 +50,20 @@
 			$password[$i] .= $char;
 		}
 		
-		// switch to hyphens if case is chosen
-		if ($case != '') {
-			$seperator = 'hyphens';
+		
+		// if seperator = camel --> ucfirst
+		// all caps/lower should be disabled if camel is chosen
+		if ($seperator == 'camel'){
+			$password[$i] = ucfirst($password[$i]);
+			
+			$camel_disable = 'disabled';
 		}
+		// if seperator = hyphen --> concat hypen except on last word
+		else if ($seperator == 'hyphens' && $i < $num_words - 1){
+			$password[$i] = $password[$i]."-";
+		}
+		
+		
 		// if case = capital --> strtoupper
 		if ($case == 'capital') {
 			$password[$i] = strtoupper($password[$i]);
@@ -62,18 +72,6 @@
 		else if ($case == 'lower') {
 			$password[$i] = strtolower($password[$i]);
 		}
-		
-		
-		// if seperator = camel --> ucfirst
-		if ($seperator == 'camel'){
-			$password[$i] = ucfirst($password[$i]);
-		}
-		// if seperator = hyphen --> concat hypen except on last word
-		else if ($seperator == 'hyphens' && $i < $num_words - 1){
-			$password[$i] = $password[$i]."-";
-		}
-		
-
 		
 		echo $password[$i];
 	}
