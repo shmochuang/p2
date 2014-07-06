@@ -26,9 +26,6 @@
 		<!-- ask if symbol desired $symbol and quantity-->
 		<input type="checkbox" name="symbols" id="symbol">Include symbols <br>
 		
-		<!-- ask if capitals desired $caps--> 
-		<input type="checkbox" name="r_caps" id="r_caps">Include random capitals<br>
-		
 		<!-- ask camel case or hyphens $camel_case, $hypens (radio buttons)-->
 		<input type="radio" name="seperator" value="camel">Camel Case or <input type="radio" name="seperator" value="hyphens">Hyphens <br>
 		

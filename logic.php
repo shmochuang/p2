@@ -8,13 +8,11 @@
 	$num_words = $_POST["num_words"];
 	$numeral = $_POST["numerals"];
 	$symbol = $_POST["symbols"];
-	$r_caps = $_POST["r_caps"];
 	$seperator = $_POST["seperator"];
 	$case = $_POST["case"];
 	
 		// echo $numeral;  on/off
 		// echo $symbol;  on/off
-		// echo $r_caps;  on/off
 		// echo $seperator;  camel/hyphens
 		// echo $case;  capital/lower
 	
@@ -28,16 +26,22 @@
 	// loop through $num_words amount of times
 	for ($i = 0; $i < $num_words; $i++){
 		// get random number between 0 and number of words in list 
-		$word_index = rand(0, 58000);
+		$word_index = rand(58000);
 		// echo $word_index."<br>";
 		
 		// set password at index $i to words at index $word_index
 		$password[$i] = $words[$word_index];
-		echo $password[$i]."<br>";
+		// echo $password[$i]."<br>";
 		
-		// if camel_case == true ucfirst
-		// if hypens == true concat hypen
-		// if all upper == true strtoupper
+		// if numeral on --> concat num
+		//if ($numeral == 'on') {
+		//	$num = rand(0, 99);
+		//	$password[$i] = $password[$i].""
+		//}
+		// if symbol on --> concat symbol
+		// if seperator = camel --> ucfirst
+		// if seperator = hyphen --> concat hypen
+		// if case = upper --> strtoupper
 	}
 
 	
