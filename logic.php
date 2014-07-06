@@ -44,7 +44,7 @@
 			$special = array("!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "?");
 			// select random char
 			$count = count($special);
-			$sp_index = rand(0, $special[$count - 1]);
+			$sp_index = rand(0, $count - 1);
 			echo $sp_index;
 		}
 		// if seperator = camel --> ucfirst
