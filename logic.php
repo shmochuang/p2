@@ -43,7 +43,7 @@
 			// create special chars array
 			$special = array("!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "?");
 			// select random char
-			$count = $special[count($special)];
+			$count = count($special);
 			echo $count;
 			//$char = rand(0, $count - 1 );
 		}
