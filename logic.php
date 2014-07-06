@@ -34,7 +34,7 @@
 		echo $password[$i]."<br>";
 		
 		// if numeral on --> concat num
-		if ($numeral == 'on') {
+		if ($numeral == on) {
 			$num = rand(0, 99);
 			$password[$i] = $password[$i].$num;
 		}
