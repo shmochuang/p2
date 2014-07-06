@@ -14,7 +14,7 @@
 		// echo $numeral;  on/off
 		// echo $symbol;  on/off
 		// echo $seperator;  camel/hyphens
-		 echo $case;  //capital/lower
+		// echo $case;  capital/lower
 	
 	
 	// if $num_words not greater than 0 and less than 10, echo "please put number btwn 1-10"
@@ -51,6 +51,9 @@
 		}
 		
 		// switch to hyphens if case is chosen
+		if ($case != '') {
+			$seperator = 'hyphens';
+		}
 		// if case = capital --> strtoupper
 		if ($case == 'capital') {
 			$password[$i] = strtoupper($password[$i]);
