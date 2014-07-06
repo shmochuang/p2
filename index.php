@@ -30,7 +30,7 @@
 		<input type="radio" name="seperator" value="camel">Camel Case or <input type="radio" name="seperator" value="hyphens">Hyphens <br>
 		
 		<!-- ask if all upper or all lower case $letter_type-->
-		<input type="radio" name="case" value="capital">ALL CAPS or <input type="radio" name="case" value="lower">all lower <br>
+		<input type="radio" name="case" value="capital" <?php echo $camel_disable ?>>ALL CAPS or <input type="radio" name="case" value="lower" <?php echo $camel_disable ?>>all lower <br>
 
 		<!-- submit button -->
 		<input type='submit' class='btn btn-default' value='Get New Password'>
