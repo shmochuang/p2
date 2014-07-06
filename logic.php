@@ -56,10 +56,15 @@
 			$password[$i] = ucfirst($password[$i]);
 		}
 		// if seperator = hyphen --> concat hypen except on last word
-		if ($seperator == 'hyphens' && $i < $num_words - 1){
+		else if ($seperator == 'hyphens' && $i < $num_words - 1){
 			$password[$i] = $password[$i]."-";
 		}
-		// if case = upper --> strtoupper
+		
+		
+		// if case = capital --> strtoupper
+		if ($case == 'capital') {
+			$password[$i] = strtoupper($password[$i]);
+		}
 		
 		echo $password[$i];
 	}
