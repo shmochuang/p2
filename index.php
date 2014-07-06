@@ -18,7 +18,7 @@
 	<form method='POST' action='index.php'>
 		
 		<!-- ask number of words $num_words-->
-		Number of words: <input type="number" name="quantity" min="1" max="10"> (1 to 10)<br>
+		Number of words: <input type="number" name="num_words" min="1" max="10"> (1 to 10)<br>
 		
 		<!-- ask if number desired $numeral-->
 		<input type="checkbox" name="numerals" id="numeral">Include numbers <br>

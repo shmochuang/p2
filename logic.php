@@ -1,17 +1,16 @@
 <?php
 
 // get word list - http://www.mieliestronk.com/corncob_lowercase.txt
-	// fopen read
-
-// parse through list into array
-	// array words(filename.txt, FILE_IGNORE_NEW_LINES, FINE_SKIP_EMPTY_LINES)
+// parse through list into array using file()
 	$words = file('words.txt', FILE_IGNORE_NEW_LINES| FINE_SKIP_EMPTY_LINES);
-	foreach($words as $word){
-		echo $word."<br>";
-	}
 		
 // get or post $num_words, $numeral, $symbol, $caps, $num_symbols, $seperator, $letter_type
+	$num_words = $_POST["num_words"];
+	echo $num_words;
+
+
 // if $num_words not greater than 0 and less than 10, echo "please put number btwn 1-10"
+// this already happens in browser with input type number.
 
 // create new array for password array password
 
