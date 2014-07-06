@@ -29,9 +29,11 @@
 	for ($i = 0; $i < $num_words; $i++){
 		// get random number between 0 and number of words in list 
 		$word_index = rand(0, 58000);
-		echo $word_index."<br>";
+		// echo $word_index."<br>";
 		
 		// set password at index $i to words at index $word_index
+		$password[$i] = $words[$word_index];
+		echo $password[$i]."<br>";
 		
 		// if camel_case == true ucfirst
 		// if hypens == true concat hypen
