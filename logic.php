@@ -36,6 +36,7 @@
 		// if numeral on --> concat num
 		if ($numeral == on) {
 			$num = rand(0, 99);
+			echo $num;
 			$password[$i] = $password[$i].$num;
 		}
 		// if symbol on --> concat symbol
