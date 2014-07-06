@@ -46,13 +46,14 @@
 			$count = count($special);
 			$sp_index = rand(0, $count - 1);
 			$char = $special[$sp_index];
-			echo $char;
+			
+			$password[$i] .= $char;
 		}
 		// if seperator = camel --> ucfirst
 		// if seperator = hyphen --> concat hypen
 		// if case = upper --> strtoupper
 		
-		//echo $password[$i]."<br>";
+		echo $password[$i]."<br>";
 	}
 
 	
