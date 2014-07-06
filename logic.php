@@ -26,12 +26,12 @@
 	// loop through $num_words amount of times
 	for ($i = 0; $i < $num_words; $i++){
 		// get random number between 0 and number of words in list 
-		$word_index = rand(58000);
+		$word_index = rand(57999);
 		// echo $word_index."<br>";
 		
 		// set password at index $i to words at index $word_index
 		$password[$i] = $words[$word_index];
-		// echo $password[$i]."<br>";
+		echo $password[$i]."<br>";
 		
 		// if numeral on --> concat num
 		//if ($numeral == 'on') {
