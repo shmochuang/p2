@@ -45,7 +45,8 @@
 			// select random char
 			$count = count($special);
 			$sp_index = rand(0, $count - 1);
-			echo $sp_index;
+			$char = $special[$sp_index];
+			echo $char;
 		}
 		// if seperator = camel --> ucfirst
 		// if seperator = hyphen --> concat hypen
