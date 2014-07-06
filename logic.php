@@ -36,7 +36,7 @@
 		// if numeral on --> concat num
 		if ($numeral == 'on') {
 			$num = rand(0, 99);
-			$password[$i] = $password[$i].""
+			$password[$i] = $password[$i]."$num";
 		}
 		// if symbol on --> concat symbol
 		// if seperator = camel --> ucfirst
