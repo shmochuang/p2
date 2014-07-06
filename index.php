@@ -8,7 +8,7 @@
 	<meta charset="utf-8">
 	
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<?php require 'logic.php' ?>
+	<?php require './logic.php' ?>
 </head>
 <body>
 
