@@ -65,6 +65,9 @@
 		if ($case == 'capital') {
 			$password[$i] = strtoupper($password[$i]);
 		}
+		else if ($case == 'lower') {
+			$password[$i] = strtolower($password[$i]);
+		}
 		
 		echo $password[$i];
 	}
