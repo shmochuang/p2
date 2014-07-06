@@ -4,9 +4,13 @@
 // parse through list into array using file()
 	$words = file('words.txt', FILE_IGNORE_NEW_LINES| FINE_SKIP_EMPTY_LINES);
 		
-// get or post $num_words, $numeral, $symbol, $caps, $num_symbols, $seperator, $letter_type
+// get or post $num_words, $numeral, $symbol, $r_caps, $seperator, $case
 	$num_words = $_POST["num_words"];
-	echo $num_words;
+	$numeral = $_POST["numerals"];
+	$symbol = $_POST["symbols"];
+	$r_caps = $_POST["r_caps"];
+	$seperator = $_POST["seperator"];
+	$case = $_POST["case"];
 
 
 // if $num_words not greater than 0 and less than 10, echo "please put number btwn 1-10"
