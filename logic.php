@@ -55,8 +55,10 @@
 		if ($seperator == 'camel'){
 			$password[$i] = ucfirst($password[$i]);
 		}
-		
-		// if seperator = hyphen --> concat hypen
+		// if seperator = hyphen --> concat hypen except on last word
+		else if ($seperator == 'hyphen' && $i < $num_words - 1){
+			$password[$i] .= "-";
+		}
 		// if case = upper --> strtoupper
 		
 		echo $password[$i]."<br>";
