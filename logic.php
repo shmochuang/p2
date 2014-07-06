@@ -31,14 +31,14 @@
 		
 		// set password at index $i to words at index $word_index
 		$password[$i] = $words[$word_index];
-		echo $password[$i]."<br>";
 		
 		// if numeral on --> concat num
 		if ($numeral == on) {
 			$num = rand(0, 99);
-			echo $num;
 			$password[$i] = $password[$i].$num;
 		}
+		
+		echo $password[$i]."<br>";
 		// if symbol on --> concat symbol
 		// if seperator = camel --> ucfirst
 		// if seperator = hyphen --> concat hypen
