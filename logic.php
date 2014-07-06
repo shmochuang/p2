@@ -11,6 +11,12 @@
 	$r_caps = $_POST["r_caps"];
 	$seperator = $_POST["seperator"];
 	$case = $_POST["case"];
+	
+	echo $numeral;
+	echo $symbol;
+	echo $r_caps;
+	echo $seperator;
+	echo $case;
 
 
 // if $num_words not greater than 0 and less than 10, echo "please put number btwn 1-10"
