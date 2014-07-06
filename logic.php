@@ -32,8 +32,8 @@
 		// set password at index $i to words at index $word_index
 		$password[$i] = $words[$word_index];
 		
-		// if numeral on --> concat num
-		if ($numeral == on) {
+		// if numeral on --> concat num only on last word
+		if ($numeral == on && $i == $num_words - 1) {
 			$num = rand(0, 99);
 			$password[$i] = $password[$i].$num;
 		}
