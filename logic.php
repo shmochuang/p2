@@ -26,7 +26,7 @@
 	$password = array();
 
 	// loop through $num_words amount of times
-	for ($i = 0; i < $num_words; i++){
+	for ($i = 0; $i < $num_words; $i++){
 		// get random number between 0 and number of words in list 
 		$word_index = rand(0, 58000);
 		echo $word_index;
