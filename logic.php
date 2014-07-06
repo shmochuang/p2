@@ -35,14 +35,23 @@
 		// if numeral on --> concat num only on last word
 		if ($numeral == on && $i == $num_words - 1) {
 			$num = rand(0, 99);
-			$password[$i] = $password[$i].$num;
+			$password[$i] .= $num;
 		}
 		
-		echo $password[$i]."<br>";
-		// if symbol on --> concat symbol
+		// if symbol on --> concat symbol only on last word
+		if ($symbol == on && $i == $num_words - 1) {
+			// create special chars array
+			$special = array("!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "?");
+			// select random char
+			$count = $special[count($special)];
+			echo $count;
+			//$char = rand(0, $count - 1 );
+		}
 		// if seperator = camel --> ucfirst
 		// if seperator = hyphen --> concat hypen
 		// if case = upper --> strtoupper
+		
+		echo $password[$i]."<br>";
 	}
 
 	
