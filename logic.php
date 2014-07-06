@@ -5,10 +5,10 @@
 
 // parse through list into array
 	// array words(filename.txt, FILE_IGNORE_NEW_LINES, FINE_SKIP_EMPTY_LINES)
-	$words = file(w.txt, FILE_IGNORE_NEW_LINES| FINE_SKIP_EMPTY_LINES);
+	$words = file('w.txt', FILE_IGNORE_NEW_LINES| FINE_SKIP_EMPTY_LINES);
 	echo "i'm here";
 	foreach($words as $word){
-		echo $word;
+		echo $word."<br>";
 	}
 		
 // get or post $num_words, $numeral, $symbol, $caps, $num_symbols, $seperator, $letter_type
