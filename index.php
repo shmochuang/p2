@@ -17,8 +17,8 @@
 	
 	<p class="pwrd">
 		<?php
-			foreach($passwords as $password){
-				echo $password;
+			foreach($password as $words){
+				echo $words;
 			}
 		?>
 	</p>
