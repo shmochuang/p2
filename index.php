@@ -1,6 +1,3 @@
-<?php
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,13 +15,13 @@
 
 	<h1>xkcd Password Generator</h1>
 	
-	<div class="pwrd">
+	<p class="pwrd">
 		<?php
 			foreach($passwords as $password){
 				echo $password;
 			}
 		?>
-	</div>
+	</p>
 	
 	<!-- create a html form -->
 	<form method='POST' action='index.php'>

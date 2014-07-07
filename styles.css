@@ -6,3 +6,7 @@ body {
 .pwrd {
 	background-color: #eee8da;
 }
+
+form {
+	text-align: justify;
+}
