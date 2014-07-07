@@ -9,6 +9,10 @@
 	
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<?php require './logic.php' ?>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+    
 </head>
 <body>
 
@@ -27,15 +31,19 @@
 		<input type="checkbox" name="symbols" id="symbol">Include symbols <br>
 		
 		<!-- ask camel case or hyphens $camel_case, $hypens (radio buttons)-->
-		<input type="radio" name="seperator" value="camel">Camel Case or <input type="radio" name="seperator" value="hyphens">Hyphens <br>
+		<input type="radio" name="seperator" value="camel" onclick="caseDisable()">Camel Case or <input type="radio" name="seperator" value="hyphens" onclick="caseEnable()">Hyphens <br>
 		
 		<!-- ask if all upper or all lower case $letter_type-->
-		<input type="radio" name="case" value="capital" <?php echo $camel_disable ?>>ALL CAPS or <input type="radio" name="case" value="lower" <?php echo $camel_disable ?>>all lower <br>
+		<input type="radio" name="case" value="capital">ALL CAPS or <input type="radio" name="case" value="lower">all lower <br>
 
 		<!-- submit button -->
 		<input type='submit' class='btn btn-default' value='Get New Password'>
 
 	</form>
 
+
+	<script type="text/javascript">
+      	
+    </script>
 </body>
 </html>
