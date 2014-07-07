@@ -70,7 +70,7 @@
 			$password[$i] = strtolower($password[$i]);
 		}
 		
-		//echo $password[$i];
+		echo $password[$i];
 	}
 
 	
