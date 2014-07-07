@@ -5,6 +5,7 @@ body {
 
 .pwrd {
 	padding: 10px;
+	margin-bottom: auto;
 	background-color:#c0aaff;
 	display: inline-block;
 }
