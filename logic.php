@@ -52,11 +52,8 @@
 		
 		
 		// if seperator = camel --> ucfirst
-		// all caps/lower should be disabled if camel is chosen
 		if ($seperator == 'camel'){
 			$password[$i] = ucfirst($password[$i]);
-			
-			$camel_disable = 'disabled';
 		}
 		// if seperator = hyphen --> concat hypen except on last word
 		else if ($seperator == 'hyphens' && $i < $num_words - 1){
@@ -73,7 +70,7 @@
 			$password[$i] = strtolower($password[$i]);
 		}
 		
-		echo $password[$i];
+		//echo $password[$i];
 	}
 
 	
