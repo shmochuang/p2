@@ -11,7 +11,7 @@
 </head>
 <body>
 
-	<h1>xkcd Password Generator</h1>
+	<h1><a href="http://xkcd.com/936/">xkcd Password Generator</a></h1>
 	
 	<div class="pwrd">
 		<?php
