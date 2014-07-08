@@ -1,6 +1,6 @@
 #DWA15 Project 2 - xkcd Password Generator
 #Live URL
-https://github.com/shmochuang/p2
+http://www.shmochuang.com/p2
 
 #Description
 An app that generates a password to the specifications of the user using the options given on the form.
