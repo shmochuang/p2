@@ -24,7 +24,7 @@ body {
 }
 
 /* style header link -- same when unvisited and visited, diff during hover */
-h1 {
+h1 a {
 	color: #8f00cc;
 }
 h1 a:visited {
