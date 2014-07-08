@@ -22,3 +22,13 @@ body {
 	background-color : #8f00cc;
 	border-radius : 9px;
 }
+
+/* style header link -- same when unvisited and visited, diff during hover */
+h1, a:visited {
+	color: #8f00cc;
+}
+
+h1 a:hover {
+	color: #1ad2fb;
+	text-decoration: line-through;
+}
