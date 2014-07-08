@@ -39,7 +39,7 @@
 		<input type="checkbox" name="cap" id="cap">Make first letter capital <br>
 				
 		<!-- ask camel case or hyphens $camel_case, $hypens (radio buttons)-->
-		<input type="radio" name="separator" value="camel" onclick="caseDisable()">Camel Case or <input type="radio" name="separator" value="hyphens" onclick="caseEnable()">Hyphens <br>
+		<input type="radio" name="separator" value="camel">Camel Case or <input type="radio" name="separator" value="hyphens">Hyphens <br>
 		
 		<!-- ask if all upper or all lower case $letter_type-->
 		<input type="radio" name="case" value="capital">ALL CAPS or <input type="radio" name="case" value="lower">all lower <br>
