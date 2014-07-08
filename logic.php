@@ -1,23 +1,28 @@
 <?php
-	// set defaults for variables
-	$num_words = 4;
-	$numeral = on;
-	$cap = on;
-	$symbol = on;
-	$seperator = "hyphens";
-	$case = "";
 
 	// get word list - http://www.mieliestronk.com/corncob_lowercase.txt
 	// parse through list into array using file()
 	$words = file('words.txt', FILE_IGNORE_NEW_LINES| FINE_SKIP_EMPTY_LINES);
 		
-	// get or post $num_words, $numeral, $symbol, $r_caps, $seperator, $case
-	$num_words = $_POST["num_words"];
-	$numeral = $_POST["numerals"];
-	$cap = $_POST["cap"];
-	$symbol = $_POST["symbols"];
-	$seperator = $_POST["separator"];
-	$case = $_POST["case"];
+	
+	if (empty($_POST)){
+		// set defaults for variables
+		$num_words = 4;
+		$numeral = on;
+		$cap = on;
+		$symbol = on;
+		$separator = "hyphens";
+		$case = "";
+	}
+	else {
+		// get or post $num_words, $numeral, $symbol, $r_caps, $seperator, $case
+		$num_words = $_POST["num_words"];
+		$numeral = $_POST["numerals"];
+		$cap = $_POST["cap"];
+		$symbol = $_POST["symbols"];
+		$separator = $_POST["separator"];
+		$case = $_POST["case"];
+	}
 	
 		// echo $numeral;  on/off
 		// echo $symbol;  on/off
