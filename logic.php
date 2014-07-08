@@ -65,9 +65,9 @@
 		}
 		
 		// if cap on --> ucfirst 1st word
-		//if ($cap == on && $i == 0) {
-		//	$password[$i] = ucfirst($password[$i]);
-		//}
+		if ($cap == on && $i == 0) {
+			$password[$i] = ucfirst($password[$i]);
+		}
 		
 		
 		// if separator = camel --> ucfirst
