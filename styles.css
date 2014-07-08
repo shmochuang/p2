@@ -6,8 +6,9 @@ body {
 .pwrd {
 	padding: 20px;
 	margin-bottom: 30px;
-	color: #f9047f;
+	color: #8f00cc;
 	background-color:#b6b1b1;
 	display: inline-block;
+	text-decoration: !important;
 }
 
