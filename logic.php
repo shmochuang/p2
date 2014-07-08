@@ -1,4 +1,11 @@
 <?php
+	// set defaults for variables
+	$num_words = 4;
+	$numeral = on;
+	$cap = on;
+	$symbol = on;
+	$seperator = "hyphens";
+	$case = "";
 
 	// get word list - http://www.mieliestronk.com/corncob_lowercase.txt
 	// parse through list into array using file()
@@ -7,12 +14,14 @@
 	// get or post $num_words, $numeral, $symbol, $r_caps, $seperator, $case
 	$num_words = $_POST["num_words"];
 	$numeral = $_POST["numerals"];
+	$cap = $_POST["cap"];
 	$symbol = $_POST["symbols"];
-	$seperator = $_POST["seperator"];
+	$seperator = $_POST["separator"];
 	$case = $_POST["case"];
 	
 		// echo $numeral;  on/off
 		// echo $symbol;  on/off
+		// echo $cap; on/off
 		// echo $seperator;  camel/hyphens
 		// echo $case;  capital/lower
 	
@@ -50,13 +59,18 @@
 			$password[$i] .= $char;
 		}
 		
+		// if cap on --> strtoupper 1st word
+		if ($cap == on && $i == 0) {
+			$password[$i] = strtoupper($password[$i]);
+		}
 		
-		// if seperator = camel --> ucfirst
-		if ($seperator == 'camel'){
+		
+		// if separator = camel --> ucfirst
+		if ($separator == 'camel'){
 			$password[$i] = ucfirst($password[$i]);
 		}
-		// if seperator = hyphen --> concat hypen except on last word
-		else if ($seperator == 'hyphens' && $i < $num_words - 1){
+		// if separator = hyphen --> concat hypen except on last word
+		else if ($separator == 'hyphens' && $i < $num_words - 1){
 			$password[$i] = $password[$i]."-";
 		}
 		
