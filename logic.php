@@ -61,7 +61,7 @@
 		
 		// if cap on --> strtoupper 1st word
 		if ($cap == on && $i == 0) {
-			$password[$i] = strtoupper($password[$i]);
+			$password[$i] = ucfirst($password[$i]);
 		}
 		
 		
