@@ -14,5 +14,6 @@ body {
 }
 
 form {
+	width: 100px;
 	border: dotted 2px #000000;
 }
