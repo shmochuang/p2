@@ -45,7 +45,7 @@
 		<input type="radio" name="case" value="capital">ALL CAPS or <input type="radio" name="case" value="lower">all lower <br>
 
 		<!-- submit button -->
-		<input type='submit' class='btn btn-default' value='Get New Password'>
+		<input type='submit' class='btn' value='Get New Password'>
 
 	</form>
 
