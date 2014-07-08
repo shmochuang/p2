@@ -7,8 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<?php require "logic.php"; ?>
 	
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script type="text/javascript" src="scripts.js"></script>
     
 </head>
 <body>
@@ -49,9 +47,5 @@
 
 	</form>
 
-
-	<script type="text/javascript">
-      	
-    </script>
 </body>
 </html>
